@@ -1,0 +1,104 @@
+/* Paleta de cores */
+:root {
+    --primary-color: #5C6BC0; /* Azul suave */
+    --secondary-color: #FFB74D; /* Laranja claro */
+    --background-color: #F5F5F5; /* Cinza claro */
+    --text-color: #333333; /* Preto suave */
+    --input-background: #ffffff; /* Branco puro */
+    --button-color: #66BB6A; /* Verde claro */
+    --button-hover: #4CAF50; /* Verde escuro */
+    --result-background: #E8F5E9; /* Verde muito claro */
+}
+
+/* Estilização geral */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: var(--background-color);
+    margin: 0;
+    padding: 0;
+    color: var(--text-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+h1 {
+    color: var(--primary-color);
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+/* Estilização do formulário */
+form {
+    background-color: var(--input-background);
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+}
+
+label {
+    font-size: 16px;
+    color: var(--primary-color);
+    margin-bottom: 5px;
+    display: block;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    border: 1px solid var(--primary-color);
+    background-color: var(--input-background);
+    transition: all 0.3s ease;
+}
+
+input:focus {
+    outline: none;
+    border-color: var(--secondary-color);
+    box-shadow: 0 0 8px rgba(255, 183, 77, 0.5);
+}
+
+/* Estilização do botão */
+button {
+    width: 100%;
+    background-color: var(--button-color);
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: var(--button-hover);
+}
+
+/* Estilização da área de resultados */
+#resultado {
+    margin-top: 20px;
+    background-color: var(--result-background);
+    padding: 20px;
+    border-radius: 12px;
+    color: var(--text-color);
+    font-size: 18px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: none; /* Mantém escondido até aparecer resultado */
+}
+
+/* Título de impacto */
+#resultado strong {
+    display: block;
+    font-size: 1.5em;
+    color: var(--primary-color);
+    margin-bottom: 10px;
+    text-align: center;
+}
